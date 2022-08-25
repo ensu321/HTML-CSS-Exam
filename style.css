@@ -12,6 +12,14 @@ html, body {
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(#D7E1EC, #FFFCFF);
+}
+
+.Navigation {
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .navigationWrap {
@@ -24,7 +32,7 @@ html, body {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  margin-top: 20px;
+  margin-top: 3vh;
   margin-left: 20px;
 }
 .navigationWrap .navigationHeader h1 {
@@ -61,15 +69,6 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
-  .Navigation {
-    background-color: #141414;
-  }
-  .Navigation .navigationWrap .navigationHeader #svgHeader {
-    background: #FFFFFF;
-  }
-  .Navigation .navigationWrap .navigationHeader h1 {
-    color: whitesmoke;
-  }
   .Navigation .navigationWrap #navigationLinks {
     display: flex;
     flex-direction: row;
@@ -93,13 +92,12 @@ html, body {
     flex-direction: row;
     width: 75%;
     justify-content: flex-end;
-    margin-top: 3vh;
+    margin-top: 4vh;
     gap: 25px;
   }
   .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul a {
     text-decoration: none;
     cursor: alias;
-    color: whitesmoke;
   }
   .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul .differentColorA {
     color: violet;
@@ -107,4 +105,127 @@ html, body {
   .Navigation .navigationWrap #menuIcon {
     display: none;
   }
+}
+.LaunchingSoonSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background: url("graphic.svg") center/cover no-repeat;
+  background-size: 550px;
+  background-position: 25vw 10vh;
+  height: 80vh;
+}
+.LaunchingSoonSection .LounchingSoonWrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  height: 100vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-top: 10vh;
+}
+.LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon {
+  width: 100%;
+  color: violet;
+}
+.LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon h3 {
+  padding: 0;
+  margin: 0;
+}
+.LaunchingSoonSection .LounchingSoonWrap .AnNFTLikeNoOther {
+  width: 60%;
+  font-size: 2rem;
+}
+.LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon {
+  width: calc(100vw - 100px);
+}
+.LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon p {
+  width: 35vw;
+  color: #555555;
+}
+.LaunchingSoonSection .LounchingSoonWrap .SignUp {
+  width: 100%;
+}
+.LaunchingSoonSection .LounchingSoonWrap button {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 30px;
+  -o-border-image: linear-gradient(45deg, red, blue) 20;
+     border-image: linear-gradient(45deg, red, blue) 20;
+}
+
+@media screen and (min-width: 768px) {
+  .LaunchingSoonSection {
+    background: url("graphic.svg") center/cover no-repeat;
+    background-size: 550px;
+    background-position: 50vw 10vh;
+  }
+}
+.FreeNFTForEarlyBirdsSection {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background: rgb(192, 31, 212);
+  background: linear-gradient(90deg, rgb(192, 31, 212) 0%, rgb(214, 93, 0) 35%, rgb(63, 171, 59) 100%);
+}
+.FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 30vh;
+  padding-top: 10vh;
+}
+.FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection h2 {
+  padding-right: 4vw;
+  padding-left: 4vw;
+  width: 70%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection p {
+  padding-right: 4vw;
+  padding-left: 4vw;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 768px) {
+  .FreeNFTForEarlyBirdsSection {
+    width: 80vw;
+    align-self: center;
+    border-radius: 15px;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    height: 25vh;
+  }
+}
+.LOGOS {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.LOGOS .WrapLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.LOGOS .WrapLogos div {
+  max-width: 90px;
+}
+.LOGOS .WrapLogos div img {
+  max-width: 90px;
 }/*# sourceMappingURL=style.css.map */

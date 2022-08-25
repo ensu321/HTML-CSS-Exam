@@ -1,6 +1,6 @@
 $PtextColor: #555555;
 $hamburgerColor:  #999999;
-
+$differentColorA: violet;
 
 
 @mixin DisplayFlexColumn {
@@ -26,10 +26,20 @@ html, body {
 .MainContainer {
     @include DisplayFlexColumn;
     @include maxwidh;
-}
+    overflow-y: auto;   
+    overflow-x: hidden;
+    background:linear-gradient(#D7E1EC, #FFFCFF);
 
+}
+//  * {
+//     outline: 2px green solid;
+//  }
 
 // CSS for the navigation 
+.Navigation {
+    width: 100vw;
+    margin: 0 auto;
+}
 
 .navigationWrap {
     @include DisplayFlexRow;
@@ -38,7 +48,7 @@ html, body {
     .navigationHeader {
         @include DisplayFlexRow;
         gap: 5px;
-        margin-top:  20px;
+        margin-top:  3vh;
         margin-left: 20px;
         h1 {
             margin: 0 auto;
@@ -81,16 +91,9 @@ height: 3px;
 // media quaries for navigation
 
 @media screen and (min-width: 768px) {
-   .Navigation {background-color: #141414;
+   .Navigation {
     .navigationWrap {
-        .navigationHeader {
-            #svgHeader {
-                background: #FFFFFF;
-            }
-            h1 {
-                color: whitesmoke;
-            }
-        }
+        
         #navigationLinks {
             @include DisplayFlexRow;
             width: 100%;
@@ -108,15 +111,15 @@ height: 3px;
                 @include DisplayFlexRow;
                 width: 75%;
             justify-content: flex-end;
-            margin-top: 3vh;
+            margin-top: 4vh;
             gap: 25px;
             a {
                 text-decoration: none;
                 cursor: alias;
-                color: whitesmoke;
+                
             }
             .differentColorA {
-                color: violet;
+                color: $differentColorA;
             }
             }
             }
@@ -130,6 +133,153 @@ height: 3px;
 }
 
 } 
+
+
+//  Lounching Soon section start
+
+.LaunchingSoonSection {
+    @include DisplayFlexColumn;
+    @include maxwidh;
+    background:  url("graphic.svg") center/cover no-repeat;
+    background-size: 550px;
+    // background-position: 130px 50px;
+    background-position: 25vw 10vh;
+    height: 80vh;
+    
+     .LounchingSoonWrap {
+        @include DisplayFlexColumn;
+        @include maxwidh;
+        height: 100vh;
+        padding-right:5vw;
+        padding-left:5vw;
+        margin-top: 10vh;
+        .headingLounchingSoon {
+            width: 100%;
+            color: $differentColorA;
+            h3 {
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .AnNFTLikeNoOther {
+            width: 60%;
+            font-size: 2rem;
+        }
+        .ParagraphLounchingSoon {
+            width:calc(100vw - 100px);
+            
+        p {
+            width: 35vw;
+           
+            color: $PtextColor;
+        }
+        }
+        .SignUp {
+            width: 100%;
+        }
+            
+            button {
+               background-color: transparent;
+                padding: 10px;
+                
+                border-radius: 30px; 
+        
+                border-image: linear-gradient(45deg,red,blue) 20;
+             
+        }
+     }
+}
+
+//  media quaries for launching soon section 
+@media screen and (min-width: 768px) {
+    .LaunchingSoonSection {
+        background:  url("graphic.svg") center/cover no-repeat;
+        background-size: 550px;
+        // background-position: 130px 50px;
+        background-position: 50vw 10vh;
+    }
+    
+}
+
+
+// CSS for the Free NFT for early birds 
+.FreeNFTForEarlyBirdsSection {
+    @include DisplayFlexColumn;
+    width: 100vw;
+    // align-self: center ;
+    // border-radius: 15px;
+    background: rgb(192,31,212);
+background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, rgba(63,171,59,1) 100%);
+    .wrapFreeNFTForEarlyBirdsSection {
+        @include DisplayFlexColumn;
+        width: 80vw;
+       
+        height: 30vh;
+        padding-top: 10vh;
+        h2 {
+            padding-right: 4vw;
+            padding-left: 4vw;
+            width: 70%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p {
+            padding-right: 4vw;
+            padding-left: 4vw;
+            width: 100%;
+            font-family:Georgia, 'Times New Roman', Times, serif
+           
+        }
+      
+    }
+}
+
+//  media quaries for Free NFT For EARLY birds
+
+@media screen and (min-width: 768px) {
+    .FreeNFTForEarlyBirdsSection {
+        width: 80vw;
+        align-self: center;
+        border-radius: 15px;
+        padding-top: 4vh;
+        padding-bottom: 2vh;
+        height: 25vh;
+    }
+}
+
+// CSS for logos of NFT
+.LOGOS {
+    @include DisplayFlexRow;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content:center;
+    align-items: center;
+
+    .WrapLogos {
+        @include DisplayFlexRow;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        gap: 20px;
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        div {
+            max-width: 90px;
+            img {
+                max-width: 90px;
+            }
+        }
+       
+    }
+}
+
+
+
+
+
+
 
 
 
