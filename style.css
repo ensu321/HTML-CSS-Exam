@@ -61,22 +61,50 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
-  .menuIcon {
+  .Navigation {
+    background-color: #141414;
+  }
+  .Navigation .navigationWrap .navigationHeader #svgHeader {
+    background: #FFFFFF;
+  }
+  .Navigation .navigationWrap .navigationHeader h1 {
+    color: whitesmoke;
+  }
+  .Navigation .navigationWrap #navigationLinks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: flex-end;
+    margin-top: 3vh;
+    gap: 25px;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul a {
+    text-decoration: none;
+    cursor: alias;
+    color: whitesmoke;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul .differentColorA {
+    color: violet;
+  }
+  .Navigation .navigationWrap #menuIcon {
     display: none;
-  }
-  .navigationLinks {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .navigationLinks .NavigationAnchors {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .navigationLinks .NavigationAnchors .navigationAnchorsWrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

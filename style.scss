@@ -81,23 +81,58 @@ height: 3px;
 // media quaries for navigation
 
 @media screen and (min-width: 768px) {
-    .menuIcon {
-        display: none;
-    }
-    
-    .navigationLinks {
-        @include DisplayFlexRow;
-        width: 100%;
-                    .NavigationAnchors {
+   .Navigation {background-color: #141414;
+    .navigationWrap {
+        .navigationHeader {
+            #svgHeader {
+                background: #FFFFFF;
+            }
+            h1 {
+                color: whitesmoke;
+            }
+        }
+        #navigationLinks {
             @include DisplayFlexRow;
-        width: 100%; 
-                     .navigationAnchorsWrap {
-                        @include DisplayFlexRow;
-        width: 100%;
+            width: 100%;
+            justify-content: space-around;
+    
+                        .NavigationAnchors {
+                @include DisplayFlexRow;
+            width: 100%; 
+            justify-content: space-around;
+                         .navigationAnchorsWrap {
+                            @include DisplayFlexRow;
+            width: 100%;
+            justify-content: space-around;
+            ul {
+                @include DisplayFlexRow;
+                width: 75%;
+            justify-content: flex-end;
+            margin-top: 3vh;
+            gap: 25px;
+            a {
+                text-decoration: none;
+                cursor: alias;
+                color: whitesmoke;
+            }
+            .differentColorA {
+                color: violet;
+            }
+            }
+            }
+            }
         }
+        #menuIcon {
+            display: none;
+            
         }
     }
+}
+
 } 
+
+
+
 
 
 
