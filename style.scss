@@ -275,6 +275,25 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
     }
 }
 
+// CSS LeSuperRrareActionSection
+
+.LeSuperRrareActionSection {
+    @include DisplayFlexRow;
+    height: 70vh;
+    width: 100vw;
+    flex-wrap: nowrap;
+    
+  
+    -webkit-overflow-scrolling: touch;
+    .wrapLeSuperRrareActionSection {
+        @include DisplayFlexRow;
+        // flex: 0 0 auto;
+        // height: 2000px;
+
+    }
+
+}
+
 
 
 

@@ -228,4 +228,17 @@ html, body {
 }
 .LOGOS .WrapLogos div img {
   max-width: 90px;
+}
+
+.LeSuperRrareActionSection {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  width: 100vw;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
