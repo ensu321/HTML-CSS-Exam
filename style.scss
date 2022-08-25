@@ -1,0 +1,106 @@
+$PtextColor: #555555;
+$hamburgerColor:  #999999;
+
+
+
+@mixin DisplayFlexColumn {
+display: flex;
+flex-direction: column;
+}
+
+@mixin DisplayFlexRow {
+    display: flex;
+flex-direction: row;
+}
+@mixin maxwidh {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh
+}
+
+html, body {
+    @include DisplayFlexColumn;
+    @include maxwidh;
+}
+
+.MainContainer {
+    @include DisplayFlexColumn;
+    @include maxwidh;
+}
+
+
+// CSS for the navigation 
+
+.navigationWrap {
+    @include DisplayFlexRow;
+    width: 100vw;
+    justify-content: space-between;
+    .navigationHeader {
+        @include DisplayFlexRow;
+        gap: 5px;
+        margin-top:  20px;
+        margin-left: 20px;
+        h1 {
+            margin: 0 auto;
+        }
+    }
+    .navigationLinks {
+        display: none;
+    }
+    .menuIcon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        cursor:grab;
+        .Rectangle13  {
+            width: 18px;
+height: 3px;
+            background-color:$hamburgerColor ;
+        }
+            
+            
+            /* Rectangle 14 */
+            .Rectangle14 {
+                width: 18px;
+height: 3px;
+            background-color: $hamburgerColor;
+            }
+            
+            /* Rectangle 12 */
+            .Rectangle12 {
+              
+                width: 18px;
+height: 3px;
+                background-color: $hamburgerColor;
+            }
+    }
+}
+
+// media quaries for navigation
+
+@media screen and (min-width: 768px) {
+    .menuIcon {
+        display: none;
+    }
+    
+    .navigationLinks {
+        @include DisplayFlexRow;
+        width: 100%;
+                    .NavigationAnchors {
+            @include DisplayFlexRow;
+        width: 100%; 
+                     .navigationAnchorsWrap {
+                        @include DisplayFlexRow;
+        width: 100%;
+        }
+        }
+    }
+} 
+
+
+
+
+
+

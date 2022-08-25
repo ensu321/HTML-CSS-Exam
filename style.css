@@ -1,1 +1,82 @@
-/*# sourceMappingURL=style.css.map */
+html, body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navigationWrap {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+}
+.navigationWrap .navigationHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.navigationWrap .navigationHeader h1 {
+  margin: 0 auto;
+}
+.navigationWrap .navigationLinks {
+  display: none;
+}
+.navigationWrap .menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  /* Rectangle 14 */
+  /* Rectangle 12 */
+}
+.navigationWrap .menuIcon .Rectangle13 {
+  width: 18px;
+  height: 3px;
+  background-color: #999999;
+}
+.navigationWrap .menuIcon .Rectangle14 {
+  width: 18px;
+  height: 3px;
+  background-color: #999999;
+}
+.navigationWrap .menuIcon .Rectangle12 {
+  width: 18px;
+  height: 3px;
+  background-color: #999999;
+}
+
+@media screen and (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+  .navigationLinks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .navigationLinks .NavigationAnchors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .navigationLinks .NavigationAnchors .navigationAnchorsWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
