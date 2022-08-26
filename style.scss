@@ -25,25 +25,25 @@ html, body {
 
 .MainContainer {
     @include DisplayFlexColumn;
-    @include maxwidh;
+ @include maxwidh;
     overflow-y: auto;   
-    overflow-x: hidden;
+    
     background:linear-gradient(#D7E1EC, #FFFCFF);
 
 }
 //  * {
 //     outline: 2px green solid;
-//  }
+//   }
 
 // CSS for the navigation 
 .Navigation {
-    width: 100vw;
+    width: 80vw;
     margin: 0 auto;
 }
 
 .navigationWrap {
     @include DisplayFlexRow;
-    width: 100vw;
+    width: 80vw;
     justify-content: space-between;
     .navigationHeader {
         @include DisplayFlexRow;
@@ -139,22 +139,25 @@ height: 3px;
 
 .LaunchingSoonSection {
     @include DisplayFlexColumn;
-    @include maxwidh;
+    align-items: center;
     background:  url("graphic.svg") center/cover no-repeat;
     background-size: 550px;
     // background-position: 130px 50px;
     background-position: 25vw 10vh;
     height: 80vh;
     
+   margin-top: 10vh;
+    
      .LounchingSoonWrap {
         @include DisplayFlexColumn;
-        @include maxwidh;
-        height: 100vh;
+        width: 80%;
+        height: 80vh;
         padding-right:5vw;
         padding-left:5vw;
-        margin-top: 10vh;
+        margin: 0 auto;
+       
         .headingLounchingSoon {
-            width: 100%;
+            width: 50%;
             color: $differentColorA;
             h3 {
                 padding: 0;
@@ -166,7 +169,7 @@ height: 3px;
             font-size: 2rem;
         }
         .ParagraphLounchingSoon {
-            width:calc(100vw - 100px);
+            width:calc(60vw - 100px);
             
         p {
             width: 35vw;
@@ -175,7 +178,7 @@ height: 3px;
         }
         }
         .SignUp {
-            width: 100%;
+            width: 70%;
         }
             
             button {
@@ -206,13 +209,12 @@ height: 3px;
 .FreeNFTForEarlyBirdsSection {
     @include DisplayFlexColumn;
     width: 100vw;
-    // align-self: center ;
-    // border-radius: 15px;
+
     background: rgb(192,31,212);
 background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, rgba(63,171,59,1) 100%);
     .wrapFreeNFTForEarlyBirdsSection {
         @include DisplayFlexColumn;
-        width: 80vw;
+        width: 80%;
        
         height: 30vh;
         padding-top: 10vh;
@@ -249,7 +251,8 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
 // CSS for logos of NFT
 .LOGOS {
     @include DisplayFlexRow;
-    width: 100vw;
+    width: 80vw;
+    margin: 0 auto;
     flex-wrap: wrap;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -277,25 +280,97 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
 
 // CSS LeSuperRrareActionSection
 
+
 .LeSuperRrareActionSection {
     @include DisplayFlexRow;
+    justify-content: center;
+    margin: 0 auto;
     height: 70vh;
-    width: 100vw;
-    flex-wrap: nowrap;
-    
-  
+    width: 80vw;
+   
     -webkit-overflow-scrolling: touch;
     .wrapLeSuperRrareActionSection {
-        @include DisplayFlexRow;
-        // flex: 0 0 auto;
-        // height: 2000px;
-
+        @include DisplayFlexColumn;
+     
+        width: 80vw;
+        height: 70vh;
+        .LeSuperRareAuctionParagrapgh {
+           
+            color: #555555; 
+            p a {
+                color: #555555; 
+            }
+        }
+        .LeSuperRrateAuctionGallery {
+            @include DisplayFlexColumn;
+            
+            width: 80vw;
+            height: 50vh;
+          
+            .wrapLeSuperRareAuctionGallery {
+                @include DisplayFlexRow;
+                
+                overflow-x: auto;
+                gap: 4vw;
+                scroll-behavior: smooth;
+                width: 80vw;
+            height: 70vh;
+            .LeSuperRareAuctionItem1 {
+                height: 100%;
+                background-color: lightgray;
+                border-radius: 15px;
+                .LeSuperRrateAuctionParagpraghGalleryImage {
+                   img {
+                    scale: 1/2;
+                    height: 30vh;
+                   }
+                }
+                .LeSuperRareAuctionItem1Footer {
+                    @include DisplayFlexRow;
+                    justify-content: space-around;
+                    .LeSuperRareAuctionItem1FooterLeft h4 {
+                            color: orangered;
+                    }
+                    .LeSuperRareAuctionItem1FooterLeft p:first-of-type {
+                        font-weight: bold;
+                    }
+                    .LeSuperRareAuctionItem1FooterLeft p:last-of-type  {
+                            color:gray;
+                    }
+                    .LeSuperRareAuctionItem1FooterRight h4  {
+                            color: gray;
+                            font-weight: normal;
+                    }
+                    .LeSuperRareAuctionItem1FooterRight p:first-of-type {
+                        font-weight: bold;
+                    }
+                    .LeSuperRareAuctionItem1FooterRight p:last-of-type {
+                        color: gray;
+                    }
+                }
+            }
+            }
+        }
     }
-
 }
 
 
+// Media quaries for Le super rate auction gallery
 
+  @media screen and (min-width: 768px) {
+     .wrapLeSuperRareAuctionGallery {
+       
+       display: flex;
+       justify-content: space-between;
+       overflow-y: hidden;      
+    }
+   #ImageInTheGallery  {
+        height: 20vh;
+    }
+   #wrapLeSuperRareAuctionGallery {
+    height: 35vh;
+   }
+ }
 
 
 

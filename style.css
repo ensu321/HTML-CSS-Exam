@@ -13,19 +13,18 @@ html, body {
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
-  overflow-x: hidden;
   background: linear-gradient(#D7E1EC, #FFFCFF);
 }
 
 .Navigation {
-  width: 100vw;
+  width: 80vw;
   margin: 0 auto;
 }
 
 .navigationWrap {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 80vw;
   justify-content: space-between;
 }
 .navigationWrap .navigationHeader {
@@ -109,27 +108,24 @@ html, body {
 .LaunchingSoonSection {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
+  align-items: center;
   background: url("graphic.svg") center/cover no-repeat;
   background-size: 550px;
   background-position: 25vw 10vh;
   height: 80vh;
+  margin-top: 10vh;
 }
 .LaunchingSoonSection .LounchingSoonWrap {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
-  height: 100vh;
+  width: 80%;
+  height: 80vh;
   padding-right: 5vw;
   padding-left: 5vw;
-  margin-top: 10vh;
+  margin: 0 auto;
 }
 .LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon {
-  width: 100%;
+  width: 50%;
   color: violet;
 }
 .LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon h3 {
@@ -141,14 +137,14 @@ html, body {
   font-size: 2rem;
 }
 .LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon {
-  width: calc(100vw - 100px);
+  width: calc(60vw - 100px);
 }
 .LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon p {
   width: 35vw;
   color: #555555;
 }
 .LaunchingSoonSection .LounchingSoonWrap .SignUp {
-  width: 100%;
+  width: 70%;
 }
 .LaunchingSoonSection .LounchingSoonWrap button {
   background-color: transparent;
@@ -175,7 +171,7 @@ html, body {
 .FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 80%;
   height: 30vh;
   padding-top: 10vh;
 }
@@ -205,7 +201,8 @@ html, body {
 .LOGOS {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 80vw;
+  margin: 0 auto;
   flex-wrap: wrap;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -233,12 +230,83 @@ html, body {
 .LeSuperRrareActionSection {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
   height: 70vh;
-  width: 100vw;
-  flex-wrap: nowrap;
+  width: 80vw;
   -webkit-overflow-scrolling: touch;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection {
   display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 70vh;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionParagrapgh {
+  color: #555555;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionParagrapgh p a {
+  color: #555555;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 50vh;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery {
+  display: flex;
   flex-direction: row;
+  overflow-x: auto;
+  gap: 4vw;
+  scroll-behavior: smooth;
+  width: 80vw;
+  height: 70vh;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 {
+  height: 100%;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRrateAuctionParagpraghGalleryImage img {
+  scale: 1/2;
+  height: 30vh;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft h4 {
+  color: orangered;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft p:first-of-type {
+  font-weight: bold;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft p:last-of-type {
+  color: gray;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight h4 {
+  color: gray;
+  font-weight: normal;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight p:first-of-type {
+  font-weight: bold;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight p:last-of-type {
+  color: gray;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapLeSuperRareAuctionGallery {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+  }
+  #ImageInTheGallery {
+    height: 20vh;
+  }
+  #wrapLeSuperRareAuctionGallery {
+    height: 35vh;
+  }
 }/*# sourceMappingURL=style.css.map */
