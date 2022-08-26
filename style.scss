@@ -144,7 +144,7 @@ height: 3px;
     background-size: 550px;
     // background-position: 130px 50px;
     background-position: 25vw 10vh;
-    height: 80vh;
+    height: 100vh;
     
    margin-top: 10vh;
     
@@ -186,6 +186,7 @@ height: 3px;
                 padding: 10px;
                 
                 border-radius: 30px; 
+                border-width: 4px;
         
                 border-image: linear-gradient(45deg,red,blue) 20;
              
@@ -200,6 +201,7 @@ height: 3px;
         background-size: 550px;
         // background-position: 130px 50px;
         background-position: 50vw 10vh;
+        height: 70vh
     }
     
 }
@@ -358,6 +360,11 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
 // Media quaries for Le super rate auction gallery
 
   @media screen and (min-width: 768px) {
+    .LeSuperRrareActionSection {
+        height: 50vh;
+    } 
+
+
      .wrapLeSuperRareAuctionGallery {
        
        display: flex;
@@ -372,6 +379,49 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
    }
  }
 
+//  CSS for the green chick section
+
+.greenChickSection {
+    @include DisplayFlexColumn;
+    align-items: center;
+    margin-top: 4vh;
+    padding-bottom: 10vh;
+
+    width: 100vw;
+    background:  url("upsell-footer-image.svg") center/cover no-repeat;
+    background-size: contain;
+    
+    // background-position: 130px 50px;
+    background-position: 70vw 2vh;
+    height: 80vh;
+    .wrapgreenChickSection {
+        @include DisplayFlexColumn;
+        width: 80vw;
+        .greenChickSectionH4 {
+            color: $differentColorA;
+        }
+        .greenChickSectionH2 {
+            font-size: 1.5rem;
+            width: 62%;
+            h2 {
+                margin: 2px;
+            }
+        }
+        .greenChickSectionP {
+            width: 62%;
+            color: $PtextColor;
+        }
+        .greenChickSectionButton button {
+            background-color: transparent;
+                padding: 10px;
+                border-radius: 30px; 
+                border-width: 4px;
+                border-image: linear-gradient(45deg,red,blue) 20;
+        }
+    }
+}
+
+// Media for Green Chick
 
 
 

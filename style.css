@@ -112,7 +112,7 @@ html, body {
   background: url("graphic.svg") center/cover no-repeat;
   background-size: 550px;
   background-position: 25vw 10vh;
-  height: 80vh;
+  height: 100vh;
   margin-top: 10vh;
 }
 .LaunchingSoonSection .LounchingSoonWrap {
@@ -150,6 +150,7 @@ html, body {
   background-color: transparent;
   padding: 10px;
   border-radius: 30px;
+  border-width: 4px;
   -o-border-image: linear-gradient(45deg, red, blue) 20;
      border-image: linear-gradient(45deg, red, blue) 20;
 }
@@ -159,6 +160,7 @@ html, body {
     background: url("graphic.svg") center/cover no-repeat;
     background-size: 550px;
     background-position: 50vw 10vh;
+    height: 70vh;
   }
 }
 .FreeNFTForEarlyBirdsSection {
@@ -298,6 +300,9 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
+  .LeSuperRrareActionSection {
+    height: 50vh;
+  }
   .wrapLeSuperRareAuctionGallery {
     display: flex;
     justify-content: space-between;
@@ -309,4 +314,43 @@ html, body {
   #wrapLeSuperRareAuctionGallery {
     height: 35vh;
   }
+}
+.greenChickSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+  padding-bottom: 10vh;
+  width: 100vw;
+  background: url("upsell-footer-image.svg") center/cover no-repeat;
+  background-size: contain;
+  background-position: 70vw 2vh;
+  height: 80vh;
+}
+.greenChickSection .wrapgreenChickSection {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionH4 {
+  color: violet;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionH2 {
+  font-size: 1.5rem;
+  width: 62%;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionH2 h2 {
+  margin: 2px;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionP {
+  width: 62%;
+  color: #555555;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionButton button {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 30px;
+  border-width: 4px;
+  -o-border-image: linear-gradient(45deg, red, blue) 20;
+     border-image: linear-gradient(45deg, red, blue) 20;
 }/*# sourceMappingURL=style.css.map */
