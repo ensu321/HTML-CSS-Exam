@@ -1,9 +1,14 @@
-html, body {
+html {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
+  font-size: 62.5%;
+}
+
+.body {
+  font-size: 1.6rem;
 }
 
 .MainContainer {
@@ -34,8 +39,12 @@ html, body {
   margin-top: 3vh;
   margin-left: 20px;
 }
+.navigationWrap .navigationHeader svg {
+  padding-top: 7px;
+}
 .navigationWrap .navigationHeader h1 {
   margin: 0 auto;
+  font-size: 4rem;
 }
 .navigationWrap .navigationLinks {
   display: none;
@@ -97,6 +106,7 @@ html, body {
   .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul a {
     text-decoration: none;
     cursor: alias;
+    font-size: 2rem;
   }
   .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul .differentColorA {
     color: violet;
@@ -110,19 +120,17 @@ html, body {
   flex-direction: column;
   align-items: center;
   background: url("graphic.svg") center/cover no-repeat;
-  background-size: 550px;
-  background-position: 25vw 10vh;
-  height: 100vh;
+  background-size: 450px;
+  background-position: 45vw -1vh;
   margin-top: 10vh;
 }
 .LaunchingSoonSection .LounchingSoonWrap {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 80vh;
+  height: 90vh;
   padding-right: 5vw;
   padding-left: 5vw;
-  margin: 0 auto;
 }
 .LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon {
   width: 50%;
@@ -131,36 +139,40 @@ html, body {
 .LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon h3 {
   padding: 0;
   margin: 0;
+  font-size: 2rem;
 }
 .LaunchingSoonSection .LounchingSoonWrap .AnNFTLikeNoOther {
   width: 60%;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon {
-  width: calc(60vw - 100px);
+  width: 60%;
+  max-height: 150px;
 }
 .LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon p {
-  width: 35vw;
+  width: 100%;
+  max-height: 120px;
   color: #555555;
-}
-.LaunchingSoonSection .LounchingSoonWrap .SignUp {
-  width: 70%;
+  overflow: hidden;
+  font-size: 1.9rem;
 }
 .LaunchingSoonSection .LounchingSoonWrap button {
   background-color: transparent;
   padding: 10px;
-  border-radius: 30px;
   border-width: 4px;
-  -o-border-image: linear-gradient(45deg, red, blue) 20;
-     border-image: linear-gradient(45deg, red, blue) 20;
+  -o-border-image: linear-gradient(45deg, red, blue) 10;
+     border-image: linear-gradient(45deg, red, blue) 10;
 }
 
 @media screen and (min-width: 768px) {
   .LaunchingSoonSection {
     background: url("graphic.svg") center/cover no-repeat;
     background-size: 550px;
-    background-position: 50vw 10vh;
-    height: 70vh;
+    background-position: 50vw -5vh;
+  }
+  .LaunchingSoonSection .LounchingSoonWrap {
+    padding-bottom: 5vh;
+    height: 60vh;
   }
 }
 .FreeNFTForEarlyBirdsSection {
@@ -181,12 +193,14 @@ html, body {
   padding-right: 4vw;
   padding-left: 4vw;
   width: 70%;
+  font-size: 2.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection p {
   padding-right: 4vw;
   padding-left: 4vw;
   width: 100%;
+  font-size: 1.5rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -244,7 +258,11 @@ html, body {
   width: 80vw;
   height: 70vh;
 }
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionHeader {
+  font-size: 2rem;
+}
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionParagrapgh {
+  font-size: 1.5rem;
   color: #555555;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionParagrapgh p a {
@@ -253,6 +271,7 @@ html, body {
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery {
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   width: 80vw;
   height: 50vh;
 }
@@ -334,9 +353,10 @@ html, body {
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionH4 {
   color: violet;
+  font-size: 2rem;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionH2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 62%;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionH2 h2 {
@@ -345,12 +365,136 @@ html, body {
 .greenChickSection .wrapgreenChickSection .greenChickSectionP {
   width: 62%;
   color: #555555;
+  font-size: 1.4rem;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionButton button {
   background-color: transparent;
+  font-size: 1.3rem;
   padding: 10px;
   border-radius: 30px;
   border-width: 4px;
-  -o-border-image: linear-gradient(45deg, red, blue) 20;
-     border-image: linear-gradient(45deg, red, blue) 20;
+  -o-border-image: linear-gradient(45deg, red, blue) 10;
+     border-image: linear-gradient(45deg, red, blue) 10;
+}
+
+.FooterSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 5vh;
+}
+.FooterSection .wrapFooter {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.FooterSection .wrapFooter .wrapFooterHeaderAndNavigation {
+  display: flex;
+  flex-direction: column;
+}
+.FooterSection .wrapFooter .FooterHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.FooterSection .wrapFooter .FooterHeader .footerheaderLogoWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  height: 45px;
+}
+.FooterSection .wrapFooter .FooterHeader .footerheaderLogoWrap .FooterHeaderLogo {
+  scale: 1/1;
+  height: auto;
+}
+.FooterSection .wrapFooter .FooterHeader .footerheaderLogoWrap .FooterHeaderCompanyName h2 {
+  font-size: 4rem;
+}
+.FooterSection .wrapFooter .FooterHeader .footerHeaderH3 {
+  color: #555555;
+  font-size: 1.5rem;
+}
+.FooterSection .wrapFooter .FooterHeader #footerSocialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.FooterSection .wrapFooter .FooterHeader #footerSocialIcons span a {
+  color: gray;
+  text-decoration: none;
+}
+.FooterSection .wrapFooter .footerNavigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3vh;
+  font-size: 1.6rem;
+}
+.FooterSection .wrapFooter .footerNavigation .WraptopNavigationBlock, .FooterSection .wrapFooter .footerNavigation .WrapBottompNavigationBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 30vw;
+  width: 100%;
+}
+.FooterSection .wrapFooter .footerNavigation .WraptopNavigationBlock .navigationBlock, .FooterSection .wrapFooter .footerNavigation .WrapBottompNavigationBlock .navigationBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.FooterSection .wrapFooter .footerNavigation .WraptopNavigationBlock .navigationBlock a, .FooterSection .wrapFooter .footerNavigation .WrapBottompNavigationBlock .navigationBlock a {
+  text-decoration: none;
+  color: #555555;
+}
+.FooterSection .wrapFooter .WrapFooterCopyrighted {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 1.5rem;
+}
+.FooterSection .wrapFooter .WrapFooterCopyrighted .LaunchingAugust {
+  display: none;
+}
+.FooterSection .wrapFooter .WrapFooterCopyrighted p {
+  color: #555555;
+}
+
+@media screen and (min-width: 768px) {
+  .FooterSection {
+    margin-top: 5vh;
+  }
+  #wrapFooterHeaderAndNavigation {
+    display: flex;
+    flex-direction: row;
+  }
+  #footerNavigation {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+  }
+  #footerNavigation .WraptopNavigationBlock {
+    gap: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 3;
+  }
+  #footerNavigation .WrapBottompNavigationBlock {
+    gap: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  .WrapFooterCopyrighted {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #LaunchingAugust {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */

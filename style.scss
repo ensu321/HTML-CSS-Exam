@@ -18,9 +18,13 @@ flex-direction: row;
     height: 100vh
 }
 
-html, body {
+html {
     @include DisplayFlexColumn;
     @include maxwidh;
+    font-size: 62.5%;
+}
+.body {
+    font-size: 1.6rem;
 }
 
 .MainContainer {
@@ -50,8 +54,12 @@ html, body {
         gap: 5px;
         margin-top:  3vh;
         margin-left: 20px;
+        svg {
+            padding-top: 7px;
+        }
         h1 {
             margin: 0 auto;
+            font-size: 4rem;
         }
     }
     .navigationLinks {
@@ -116,6 +124,7 @@ height: 3px;
             a {
                 text-decoration: none;
                 cursor: alias;
+                font-size: 2rem;
                 
             }
             .differentColorA {
@@ -141,20 +150,24 @@ height: 3px;
     @include DisplayFlexColumn;
     align-items: center;
     background:  url("graphic.svg") center/cover no-repeat;
-    background-size: 550px;
+    background-size: 450px;
     // background-position: 130px 50px;
-    background-position: 25vw 10vh;
-    height: 100vh;
+    background-position: 45vw -1vh;
+ 
     
    margin-top: 10vh;
     
      .LounchingSoonWrap {
         @include DisplayFlexColumn;
         width: 80%;
-        height: 80vh;
+        height: 90vh;
+    
+        
+        
+        
         padding-right:5vw;
         padding-left:5vw;
-        margin: 0 auto;
+       
        
         .headingLounchingSoon {
             width: 50%;
@@ -162,33 +175,36 @@ height: 3px;
             h3 {
                 padding: 0;
                 margin: 0;
+                font-size: 2rem;
             }
         }
         .AnNFTLikeNoOther {
             width: 60%;
-            font-size: 2rem;
+            font-size: 4rem;
+           
         }
         .ParagraphLounchingSoon {
-            width:calc(60vw - 100px);
+            width:60%;
+            max-height: 150px;
             
         p {
-            width: 35vw;
-           
+            width: 100%;
+            max-height: 120px;
             color: $PtextColor;
+            overflow: hidden;
+            font-size: 1.9rem;
         }
         }
-        .SignUp {
-            width: 70%;
-        }
+        
             
             button {
                background-color: transparent;
                 padding: 10px;
                 
-                border-radius: 30px; 
+               
                 border-width: 4px;
         
-                border-image: linear-gradient(45deg,red,blue) 20;
+                border-image: linear-gradient(45deg,red,blue) 10;
              
         }
      }
@@ -200,8 +216,12 @@ height: 3px;
         background:  url("graphic.svg") center/cover no-repeat;
         background-size: 550px;
         // background-position: 130px 50px;
-        background-position: 50vw 10vh;
-        height: 70vh
+        background-position: 50vw -5vh;
+        
+        .LounchingSoonWrap {
+            padding-bottom: 5vh;
+            height: 60vh;
+        }
     }
     
 }
@@ -224,12 +244,14 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
             padding-right: 4vw;
             padding-left: 4vw;
             width: 70%;
+            font-size: 2.5rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         p {
             padding-right: 4vw;
             padding-left: 4vw;
             width: 100%;
+            font-size: 1.5rem;
             font-family:Georgia, 'Times New Roman', Times, serif
            
         }
@@ -296,8 +318,11 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
      
         width: 80vw;
         height: 70vh;
+        .LeSuperRareAuctionHeader {
+            font-size: 2rem;
+        }
         .LeSuperRareAuctionParagrapgh {
-           
+            font-size: 1.5rem;
             color: #555555; 
             p a {
                 color: #555555; 
@@ -305,7 +330,7 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
         }
         .LeSuperRrateAuctionGallery {
             @include DisplayFlexColumn;
-            
+            font-size: 1.5rem;
             width: 80vw;
             height: 50vh;
           
@@ -390,8 +415,6 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
     width: 100vw;
     background:  url("upsell-footer-image.svg") center/cover no-repeat;
     background-size: contain;
-    
-    // background-position: 130px 50px;
     background-position: 70vw 2vh;
     height: 80vh;
     .wrapgreenChickSection {
@@ -399,9 +422,10 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
         width: 80vw;
         .greenChickSectionH4 {
             color: $differentColorA;
+            font-size: 2rem;
         }
         .greenChickSectionH2 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             width: 62%;
             h2 {
                 margin: 2px;
@@ -410,18 +434,147 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
         .greenChickSectionP {
             width: 62%;
             color: $PtextColor;
+            font-size: 1.4rem;
         }
         .greenChickSectionButton button {
             background-color: transparent;
+                font-size: 1.3rem;
                 padding: 10px;
                 border-radius: 30px; 
                 border-width: 4px;
-                border-image: linear-gradient(45deg,red,blue) 20;
+                border-image: linear-gradient(45deg,red,blue) 10;
         }
     }
 }
 
-// Media for Green Chick
+//  CSS for for the footer 
+
+.FooterSection {
+    @include DisplayFlexColumn;
+    width: 100%;
+   
+    align-items: center;
+
+        margin-top: 5vh;
+   
+    .wrapFooter {
+        @include DisplayFlexColumn;
+        width: 80%;
+        .wrapFooterHeaderAndNavigation {
+            display: flex;
+            flex-direction: column
+        }
+        .FooterHeader {
+            @include DisplayFlexColumn;
+            width: 100%;
+            .footerheaderLogoWrap {
+                @include DisplayFlexRow;
+                align-items: center;
+                gap: 5px;
+                height: 45px;
+                .FooterHeaderLogo {
+                    scale: 1/1;
+                    height: auto;
+                }
+                .FooterHeaderCompanyName h2 {
+                    font-size: 4rem;
+                }
+            }
+            .footerHeaderH3 {
+                color: $PtextColor;
+                font-size: 1.5rem;
+            }
+            #footerSocialIcons {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+            #footerSocialIcons span {
+             
+             
+              a {
+                color: gray;
+                text-decoration: none;
+               
+              }
+              
+            }
+        }
+        .footerNavigation {
+            @include DisplayFlexColumn;
+            width: 100%;
+            margin-top: 3vh;
+            font-size: 1.6rem;
+            .WraptopNavigationBlock, .WrapBottompNavigationBlock {
+                @include DisplayFlexRow;
+                gap: 30vw;
+                width: 100%;
+                .navigationBlock {
+                    @include DisplayFlexColumn;
+                    gap: 10px;
+                    a {
+                        text-decoration: none;
+                        color: $PtextColor;
+                    }
+                }
+            }
+          
+        }
+        .WrapFooterCopyrighted {
+            @include DisplayFlexRow;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            font-size: 1.5rem;
+            .LaunchingAugust {
+              display: none;
+            }
+            p {
+                color: $PtextColor;
+            }
+        }
+    }
+}
+// Media Quries for Footer
+@media screen and (min-width: 768px)  {
+    .FooterSection {
+        margin-top: 5vh;
+    }
+    #wrapFooterHeaderAndNavigation {
+        display: flex;
+        flex-direction: row;
+    }
+    #footerNavigation {
+        @include DisplayFlexRow;
+        gap: 5vw;
+     
+      
+        .WraptopNavigationBlock {
+            gap: 5vw;
+            @include DisplayFlexRow;
+            justify-content: flex-end;
+            flex:3;
+        }
+        .WrapBottompNavigationBlock {
+            gap: 5vw;
+            @include DisplayFlexRow;
+            justify-content: flex-start;
+            flex:1;
+        }
+    }
+
+.WrapFooterCopyrighted {
+    @include DisplayFlexRow;
+    justify-content: space-between
+}
+    #LaunchingAugust {
+    @include DisplayFlexRow;
+
+}
+ 
+}
+
+
+
 
 
 
