@@ -43,6 +43,9 @@ html {
 .Navigation {
     width: 80vw;
     margin: 0 auto;
+   
+   
+
 }
 
 .navigationWrap {
@@ -160,7 +163,8 @@ height: 3px;
      .LounchingSoonWrap {
         @include DisplayFlexColumn;
         width: 80%;
-        height: 90vh;
+        height: 100%;
+        margin-bottom: 5%;
     
         
         
@@ -200,6 +204,7 @@ height: 3px;
             button {
                background-color: transparent;
                 padding: 10px;
+                font-size: 1.6rem;
                 
                
                 border-width: 4px;
@@ -214,13 +219,13 @@ height: 3px;
 @media screen and (min-width: 768px) {
     .LaunchingSoonSection {
         background:  url("graphic.svg") center/cover no-repeat;
-        background-size: 550px;
+        background-size: 450px;
         // background-position: 130px 50px;
         background-position: 50vw -5vh;
         
         .LounchingSoonWrap {
             padding-bottom: 5vh;
-            height: 60vh;
+            height: 100%;
         }
     }
     
@@ -238,18 +243,18 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
         @include DisplayFlexColumn;
         width: 80%;
        
-        height: 30vh;
-        padding-top: 10vh;
+        height: 30%;
+        padding-top: 1%;
         h2 {
-            padding-right: 4vw;
-            padding-left: 4vw;
+            padding-right: 4%;
+            padding-left: 4%;
             width: 70%;
             font-size: 2.5rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         p {
-            padding-right: 4vw;
-            padding-left: 4vw;
+            padding-right: 4%;
+            padding-left: 4%;
             width: 100%;
             font-size: 1.5rem;
             font-family:Georgia, 'Times New Roman', Times, serif
@@ -266,9 +271,9 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
         width: 80vw;
         align-self: center;
         border-radius: 15px;
-        padding-top: 4vh;
-        padding-bottom: 2vh;
-        height: 25vh;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        height: 25%;
     }
 }
 
@@ -309,15 +314,16 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
     @include DisplayFlexRow;
     justify-content: center;
     margin: 0 auto;
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
    
     -webkit-overflow-scrolling: touch;
     .wrapLeSuperRrareActionSection {
         @include DisplayFlexColumn;
      
-        width: 80vw;
-        height: 70vh;
+        width: 100%;
+        height: 80%;
+        margin: 0 auto;
         .LeSuperRareAuctionHeader {
             font-size: 2rem;
         }
@@ -332,7 +338,7 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
             @include DisplayFlexColumn;
             font-size: 1.5rem;
             width: 80vw;
-            height: 50vh;
+            height: 100%;
           
             .wrapLeSuperRareAuctionGallery {
                 @include DisplayFlexRow;
@@ -355,24 +361,45 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
                 .LeSuperRareAuctionItem1Footer {
                     @include DisplayFlexRow;
                     justify-content: space-around;
-                    .LeSuperRareAuctionItem1FooterLeft h4 {
+                    height: 40%;
+                    min-height: 40%;
+                    .LeSuperRareAuctionItem1FooterRight {
+                        display: flex;
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                    }
+                    .LeSuperRareAuctionItem1FooterLeft {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                    }
+                                                .LeSuperRareAuctionItem1FooterLeft h4 {
                             color: orangered;
+                            max-height: 10%;
                     }
                     .LeSuperRareAuctionItem1FooterLeft p:first-of-type {
                         font-weight: bold;
+                        max-height: 10%;
                     }
                     .LeSuperRareAuctionItem1FooterLeft p:last-of-type  {
                             color:gray;
+                            max-height: 10%;
                     }
                     .LeSuperRareAuctionItem1FooterRight h4  {
                             color: gray;
                             font-weight: normal;
+                            max-height: 10%;
                     }
                     .LeSuperRareAuctionItem1FooterRight p:first-of-type {
                         font-weight: bold;
+                        max-height: 10%;
                     }
                     .LeSuperRareAuctionItem1FooterRight p:last-of-type {
                         color: gray;
+                        max-height: 10%;
                     }
                 }
             }
@@ -386,22 +413,22 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
 
   @media screen and (min-width: 768px) {
     .LeSuperRrareActionSection {
-        height: 50vh;
+        height: 85vh;  
     } 
-
-
      .wrapLeSuperRareAuctionGallery {
-       
+       height: 100%;
        display: flex;
        justify-content: space-between;
        overflow-y: hidden;      
     }
    #ImageInTheGallery  {
-        height: 20vh;
+        height: 10%;
+        width: 100%;
     }
    #wrapLeSuperRareAuctionGallery {
-    height: 35vh;
+    height: 100%;
    }
+ 
  }
 
 //  CSS for the green chick section
@@ -409,24 +436,35 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
 .greenChickSection {
     @include DisplayFlexColumn;
     align-items: center;
-    margin-top: 4vh;
-    padding-bottom: 10vh;
-
+    justify-content: center;
+   margin-top: 5%;
+  
     width: 100vw;
     background:  url("upsell-footer-image.svg") center/cover no-repeat;
-    background-size: contain;
-    background-position: 70vw 2vh;
-    height: 80vh;
+    background-size: 100px;
+    background-position: 80% 11vh;
+ 
     .wrapgreenChickSection {
         @include DisplayFlexColumn;
+        justify-content: center;
         width: 80vw;
+        height: 100%;
+  
         .greenChickSectionH4 {
             color: $differentColorA;
-            font-size: 2rem;
+            font-size: 3rem;
+          
+           display: flex;
+           align-items: center;
+          
+          
         }
         .greenChickSectionH2 {
-            font-size: 2rem;
+            font-size: 3rem;
             width: 62%;
+           
+           
+           
             h2 {
                 margin: 2px;
             }
@@ -434,17 +472,43 @@ background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, 
         .greenChickSectionP {
             width: 62%;
             color: $PtextColor;
-            font-size: 1.4rem;
+            font-size: 1.8rem;
+           
+            display: flex;
+           align-items: center;
+          
         }
         .greenChickSectionButton button {
             background-color: transparent;
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 padding: 10px;
                 border-radius: 30px; 
                 border-width: 4px;
                 border-image: linear-gradient(45deg,red,blue) 10;
+               
+                
         }
     }
+    
+}
+// Media Qauries for greenchick
+@media screen and (min-width: 768px) {
+.greenChickSection {
+    
+    
+   @include DisplayFlexColumn;
+    
+    .wrapgreenChickSection {
+        height: 100%;
+        
+        @include DisplayFlexColumn;
+        justify-content: center;
+    }
+}
+
+}
+.greenChickSectionButton {
+    max-height: 25%
 }
 
 //  CSS for for the footer 

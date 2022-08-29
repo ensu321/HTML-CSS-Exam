@@ -128,7 +128,8 @@ html {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 90vh;
+  height: 100%;
+  margin-bottom: 5%;
   padding-right: 5vw;
   padding-left: 5vw;
 }
@@ -159,6 +160,7 @@ html {
 .LaunchingSoonSection .LounchingSoonWrap button {
   background-color: transparent;
   padding: 10px;
+  font-size: 1.6rem;
   border-width: 4px;
   -o-border-image: linear-gradient(45deg, red, blue) 10;
      border-image: linear-gradient(45deg, red, blue) 10;
@@ -167,12 +169,12 @@ html {
 @media screen and (min-width: 768px) {
   .LaunchingSoonSection {
     background: url("graphic.svg") center/cover no-repeat;
-    background-size: 550px;
+    background-size: 450px;
     background-position: 50vw -5vh;
   }
   .LaunchingSoonSection .LounchingSoonWrap {
     padding-bottom: 5vh;
-    height: 60vh;
+    height: 100%;
   }
 }
 .FreeNFTForEarlyBirdsSection {
@@ -186,19 +188,19 @@ html {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 30vh;
-  padding-top: 10vh;
+  height: 30%;
+  padding-top: 1%;
 }
 .FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection h2 {
-  padding-right: 4vw;
-  padding-left: 4vw;
+  padding-right: 4%;
+  padding-left: 4%;
   width: 70%;
   font-size: 2.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection p {
-  padding-right: 4vw;
-  padding-left: 4vw;
+  padding-right: 4%;
+  padding-left: 4%;
   width: 100%;
   font-size: 1.5rem;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -209,9 +211,9 @@ html {
     width: 80vw;
     align-self: center;
     border-radius: 15px;
-    padding-top: 4vh;
-    padding-bottom: 2vh;
-    height: 25vh;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    height: 25%;
   }
 }
 .LOGOS {
@@ -248,15 +250,16 @@ html {
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
-  height: 70vh;
+  height: 80vh;
   width: 80vw;
   -webkit-overflow-scrolling: touch;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection {
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  height: 70vh;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionHeader {
   font-size: 2rem;
@@ -273,7 +276,7 @@ html {
   flex-direction: column;
   font-size: 1.5rem;
   width: 80vw;
-  height: 50vh;
+  height: 100%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery {
   display: flex;
@@ -297,66 +300,91 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 40%;
+  min-height: 40%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft h4 {
   color: orangered;
+  max-height: 10%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft p:first-of-type {
   font-weight: bold;
+  max-height: 10%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft p:last-of-type {
   color: gray;
+  max-height: 10%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight h4 {
   color: gray;
   font-weight: normal;
+  max-height: 10%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight p:first-of-type {
   font-weight: bold;
+  max-height: 10%;
 }
 .LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight p:last-of-type {
   color: gray;
+  max-height: 10%;
 }
 
 @media screen and (min-width: 768px) {
   .LeSuperRrareActionSection {
-    height: 50vh;
+    height: 85vh;
   }
   .wrapLeSuperRareAuctionGallery {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     overflow-y: hidden;
   }
   #ImageInTheGallery {
-    height: 20vh;
+    height: 10%;
+    width: 100%;
   }
   #wrapLeSuperRareAuctionGallery {
-    height: 35vh;
+    height: 100%;
   }
 }
 .greenChickSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4vh;
-  padding-bottom: 10vh;
+  justify-content: center;
+  margin-top: 5%;
   width: 100vw;
   background: url("upsell-footer-image.svg") center/cover no-repeat;
-  background-size: contain;
-  background-position: 70vw 2vh;
-  height: 80vh;
+  background-size: 100px;
+  background-position: 80% 11vh;
 }
 .greenChickSection .wrapgreenChickSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 80vw;
+  height: 100%;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionH4 {
   color: violet;
-  font-size: 2rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionH2 {
-  font-size: 2rem;
+  font-size: 3rem;
   width: 62%;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionH2 h2 {
@@ -365,16 +393,34 @@ html {
 .greenChickSection .wrapgreenChickSection .greenChickSectionP {
   width: 62%;
   color: #555555;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
 }
 .greenChickSection .wrapgreenChickSection .greenChickSectionButton button {
   background-color: transparent;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 10px;
   border-radius: 30px;
   border-width: 4px;
   -o-border-image: linear-gradient(45deg, red, blue) 10;
      border-image: linear-gradient(45deg, red, blue) 10;
+}
+
+@media screen and (min-width: 768px) {
+  .greenChickSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .greenChickSection .wrapgreenChickSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.greenChickSectionButton {
+  max-height: 25%;
 }
 
 .FooterSection {
