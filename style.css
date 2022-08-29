@@ -1,1 +1,546 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+}
+
+.body {
+  font-size: 1.6rem;
+}
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(#D7E1EC, #FFFCFF);
+}
+
+.Navigation {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.navigationWrap {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-between;
+}
+.navigationWrap .navigationHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 3vh;
+  margin-left: 20px;
+}
+.navigationWrap .navigationHeader svg {
+  padding-top: 7px;
+}
+.navigationWrap .navigationHeader h1 {
+  margin: 0 auto;
+  font-size: 4rem;
+}
+.navigationWrap .navigationLinks {
+  display: none;
+}
+.navigationWrap .menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  /* Rectangle 14 */
+  /* Rectangle 12 */
+}
+.navigationWrap .menuIcon .Rectangle13 {
+  width: 18px;
+  height: 3px;
+  background-color: #999999;
+}
+.navigationWrap .menuIcon .Rectangle14 {
+  width: 18px;
+  height: 3px;
+  background-color: #999999;
+}
+.navigationWrap .menuIcon .Rectangle12 {
+  width: 18px;
+  height: 3px;
+  background-color: #999999;
+}
+
+@media screen and (min-width: 768px) {
+  .Navigation .navigationWrap #navigationLinks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: flex-end;
+    margin-top: 4vh;
+    gap: 25px;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul a {
+    text-decoration: none;
+    cursor: alias;
+    font-size: 2rem;
+  }
+  .Navigation .navigationWrap #navigationLinks .NavigationAnchors .navigationAnchorsWrap ul .differentColorA {
+    color: violet;
+  }
+  .Navigation .navigationWrap #menuIcon {
+    display: none;
+  }
+}
+.LaunchingSoonSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("graphic.svg") center/cover no-repeat;
+  background-size: 450px;
+  background-position: 45vw -1vh;
+  margin-top: 10vh;
+}
+.LaunchingSoonSection .LounchingSoonWrap {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  margin-bottom: 5%;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+.LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon {
+  width: 50%;
+  color: violet;
+}
+.LaunchingSoonSection .LounchingSoonWrap .headingLounchingSoon h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+.LaunchingSoonSection .LounchingSoonWrap .AnNFTLikeNoOther {
+  width: 60%;
+  font-size: 4rem;
+}
+.LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon {
+  width: 60%;
+  max-height: 150px;
+}
+.LaunchingSoonSection .LounchingSoonWrap .ParagraphLounchingSoon p {
+  width: 100%;
+  max-height: 120px;
+  color: #555555;
+  overflow: hidden;
+  font-size: 1.9rem;
+}
+.LaunchingSoonSection .LounchingSoonWrap button {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 1.6rem;
+  border-width: 4px;
+  -o-border-image: linear-gradient(45deg, red, blue) 10;
+     border-image: linear-gradient(45deg, red, blue) 10;
+}
+
+@media screen and (min-width: 768px) {
+  .LaunchingSoonSection {
+    background: url("graphic.svg") center/cover no-repeat;
+    background-size: 450px;
+    background-position: 50vw -5vh;
+  }
+  .LaunchingSoonSection .LounchingSoonWrap {
+    padding-bottom: 5vh;
+    height: 100%;
+  }
+}
+.FreeNFTForEarlyBirdsSection {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background: rgb(192, 31, 212);
+  background: linear-gradient(90deg, rgb(192, 31, 212) 0%, rgb(214, 93, 0) 35%, rgb(63, 171, 59) 100%);
+}
+.FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 30%;
+  padding-top: 1%;
+}
+.FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection h2 {
+  padding-right: 4%;
+  padding-left: 4%;
+  width: 70%;
+  font-size: 2.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.FreeNFTForEarlyBirdsSection .wrapFreeNFTForEarlyBirdsSection p {
+  padding-right: 4%;
+  padding-left: 4%;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 768px) {
+  .FreeNFTForEarlyBirdsSection {
+    width: 80vw;
+    align-self: center;
+    border-radius: 15px;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    height: 25%;
+  }
+}
+.LOGOS {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.LOGOS .WrapLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.LOGOS .WrapLogos div {
+  max-width: 90px;
+}
+.LOGOS .WrapLogos div img {
+  max-width: 90px;
+}
+
+.LeSuperRrareActionSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  height: 80vh;
+  width: 80vw;
+  -webkit-overflow-scrolling: touch;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionHeader {
+  font-size: 2rem;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionParagrapgh {
+  font-size: 1.5rem;
+  color: #555555;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRareAuctionParagrapgh p a {
+  color: #555555;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  width: 80vw;
+  height: 100%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 4vw;
+  scroll-behavior: smooth;
+  width: 80vw;
+  height: 70vh;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 {
+  height: 100%;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRrateAuctionParagpraghGalleryImage img {
+  scale: 1/2;
+  height: 30vh;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 40%;
+  min-height: 40%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft h4 {
+  color: orangered;
+  max-height: 10%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft p:first-of-type {
+  font-weight: bold;
+  max-height: 10%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterLeft p:last-of-type {
+  color: gray;
+  max-height: 10%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight h4 {
+  color: gray;
+  font-weight: normal;
+  max-height: 10%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight p:first-of-type {
+  font-weight: bold;
+  max-height: 10%;
+}
+.LeSuperRrareActionSection .wrapLeSuperRrareActionSection .LeSuperRrateAuctionGallery .wrapLeSuperRareAuctionGallery .LeSuperRareAuctionItem1 .LeSuperRareAuctionItem1Footer .LeSuperRareAuctionItem1FooterRight p:last-of-type {
+  color: gray;
+  max-height: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .LeSuperRrareActionSection {
+    height: 85vh;
+  }
+  .wrapLeSuperRareAuctionGallery {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+  }
+  #ImageInTheGallery {
+    height: 10%;
+    width: 100%;
+  }
+  #wrapLeSuperRareAuctionGallery {
+    height: 100%;
+  }
+}
+.greenChickSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 100vw;
+  background: url("upsell-footer-image.svg") center/cover no-repeat;
+  background-size: 100px;
+  background-position: 80% 11vh;
+}
+.greenChickSection .wrapgreenChickSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 100%;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionH4 {
+  color: violet;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionH2 {
+  font-size: 3rem;
+  width: 62%;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionH2 h2 {
+  margin: 2px;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionP {
+  width: 62%;
+  color: #555555;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+.greenChickSection .wrapgreenChickSection .greenChickSectionButton button {
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 30px;
+  border-width: 4px;
+  -o-border-image: linear-gradient(45deg, red, blue) 10;
+     border-image: linear-gradient(45deg, red, blue) 10;
+}
+
+@media screen and (min-width: 768px) {
+  .greenChickSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .greenChickSection .wrapgreenChickSection {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.greenChickSectionButton {
+  max-height: 25%;
+}
+
+.FooterSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 5vh;
+}
+.FooterSection .wrapFooter {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.FooterSection .wrapFooter .wrapFooterHeaderAndNavigation {
+  display: flex;
+  flex-direction: column;
+}
+.FooterSection .wrapFooter .FooterHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.FooterSection .wrapFooter .FooterHeader .footerheaderLogoWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  height: 45px;
+}
+.FooterSection .wrapFooter .FooterHeader .footerheaderLogoWrap .FooterHeaderLogo {
+  scale: 1/1;
+  height: auto;
+}
+.FooterSection .wrapFooter .FooterHeader .footerheaderLogoWrap .FooterHeaderCompanyName h2 {
+  font-size: 4rem;
+}
+.FooterSection .wrapFooter .FooterHeader .footerHeaderH3 {
+  color: #555555;
+  font-size: 1.5rem;
+}
+.FooterSection .wrapFooter .FooterHeader #footerSocialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.FooterSection .wrapFooter .FooterHeader #footerSocialIcons span a {
+  color: gray;
+  text-decoration: none;
+}
+.FooterSection .wrapFooter .footerNavigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3vh;
+  font-size: 1.6rem;
+}
+.FooterSection .wrapFooter .footerNavigation .WraptopNavigationBlock, .FooterSection .wrapFooter .footerNavigation .WrapBottompNavigationBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 30vw;
+  width: 100%;
+}
+.FooterSection .wrapFooter .footerNavigation .WraptopNavigationBlock .navigationBlock, .FooterSection .wrapFooter .footerNavigation .WrapBottompNavigationBlock .navigationBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.FooterSection .wrapFooter .footerNavigation .WraptopNavigationBlock .navigationBlock a, .FooterSection .wrapFooter .footerNavigation .WrapBottompNavigationBlock .navigationBlock a {
+  text-decoration: none;
+  color: #555555;
+}
+.FooterSection .wrapFooter .WrapFooterCopyrighted {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 1.5rem;
+}
+.FooterSection .wrapFooter .WrapFooterCopyrighted .LaunchingAugust {
+  display: none;
+}
+.FooterSection .wrapFooter .WrapFooterCopyrighted p {
+  color: #555555;
+}
+
+@media screen and (min-width: 768px) {
+  .FooterSection {
+    margin-top: 5vh;
+  }
+  #wrapFooterHeaderAndNavigation {
+    display: flex;
+    flex-direction: row;
+  }
+  #footerNavigation {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+  }
+  #footerNavigation .WraptopNavigationBlock {
+    gap: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 3;
+  }
+  #footerNavigation .WrapBottompNavigationBlock {
+    gap: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  .WrapFooterCopyrighted {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #LaunchingAugust {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */

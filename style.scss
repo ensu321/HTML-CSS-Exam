@@ -1,0 +1,652 @@
+$PtextColor: #555555;
+$hamburgerColor:  #999999;
+$differentColorA: violet;
+
+
+@mixin DisplayFlexColumn {
+display: flex;
+flex-direction: column;
+}
+
+@mixin DisplayFlexRow {
+    display: flex;
+flex-direction: row;
+}
+@mixin maxwidh {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh
+}
+
+html {
+    @include DisplayFlexColumn;
+    @include maxwidh;
+    font-size: 62.5%;
+}
+.body {
+    font-size: 1.6rem;
+}
+
+.MainContainer {
+    @include DisplayFlexColumn;
+ @include maxwidh;
+    overflow-y: auto;   
+    
+    background:linear-gradient(#D7E1EC, #FFFCFF);
+
+}
+//  * {
+//     outline: 2px green solid;
+//   }
+
+// CSS for the navigation 
+.Navigation {
+    width: 80vw;
+    margin: 0 auto;
+   
+   
+
+}
+
+.navigationWrap {
+    @include DisplayFlexRow;
+    width: 80vw;
+    justify-content: space-between;
+    .navigationHeader {
+        @include DisplayFlexRow;
+        gap: 5px;
+        margin-top:  3vh;
+        margin-left: 20px;
+        svg {
+            padding-top: 7px;
+        }
+        h1 {
+            margin: 0 auto;
+            font-size: 4rem;
+        }
+    }
+    .navigationLinks {
+        display: none;
+    }
+    .menuIcon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        cursor:grab;
+        .Rectangle13  {
+            width: 18px;
+height: 3px;
+            background-color:$hamburgerColor ;
+        }
+            
+            
+            /* Rectangle 14 */
+            .Rectangle14 {
+                width: 18px;
+height: 3px;
+            background-color: $hamburgerColor;
+            }
+            
+            /* Rectangle 12 */
+            .Rectangle12 {
+              
+                width: 18px;
+height: 3px;
+                background-color: $hamburgerColor;
+            }
+    }
+}
+
+// media quaries for navigation
+
+@media screen and (min-width: 768px) {
+   .Navigation {
+    .navigationWrap {
+        
+        #navigationLinks {
+            @include DisplayFlexRow;
+            width: 100%;
+            justify-content: space-around;
+    
+                        .NavigationAnchors {
+                @include DisplayFlexRow;
+            width: 100%; 
+            justify-content: space-around;
+                         .navigationAnchorsWrap {
+                            @include DisplayFlexRow;
+            width: 100%;
+            justify-content: space-around;
+            ul {
+                @include DisplayFlexRow;
+                width: 75%;
+            justify-content: flex-end;
+            margin-top: 4vh;
+            gap: 25px;
+            a {
+                text-decoration: none;
+                cursor: alias;
+                font-size: 2rem;
+                
+            }
+            .differentColorA {
+                color: $differentColorA;
+            }
+            }
+            }
+            }
+        }
+        #menuIcon {
+            display: none;
+            
+        }
+    }
+}
+
+} 
+
+
+//  Lounching Soon section start
+
+.LaunchingSoonSection {
+    @include DisplayFlexColumn;
+    align-items: center;
+    background:  url("graphic.svg") center/cover no-repeat;
+    background-size: 450px;
+    // background-position: 130px 50px;
+    background-position: 45vw -1vh;
+ 
+    
+   margin-top: 10vh;
+    
+     .LounchingSoonWrap {
+        @include DisplayFlexColumn;
+        width: 80%;
+        height: 100%;
+        margin-bottom: 5%;
+    
+        
+        
+        
+        padding-right:5vw;
+        padding-left:5vw;
+       
+       
+        .headingLounchingSoon {
+            width: 50%;
+            color: $differentColorA;
+            h3 {
+                padding: 0;
+                margin: 0;
+                font-size: 2rem;
+            }
+        }
+        .AnNFTLikeNoOther {
+            width: 60%;
+            font-size: 4rem;
+           
+        }
+        .ParagraphLounchingSoon {
+            width:60%;
+            max-height: 150px;
+            
+        p {
+            width: 100%;
+            max-height: 120px;
+            color: $PtextColor;
+            overflow: hidden;
+            font-size: 1.9rem;
+        }
+        }
+        
+            
+            button {
+               background-color: transparent;
+                padding: 10px;
+                font-size: 1.6rem;
+                
+               
+                border-width: 4px;
+        
+                border-image: linear-gradient(45deg,red,blue) 10;
+             
+        }
+     }
+}
+
+//  media quaries for launching soon section 
+@media screen and (min-width: 768px) {
+    .LaunchingSoonSection {
+        background:  url("graphic.svg") center/cover no-repeat;
+        background-size: 450px;
+        // background-position: 130px 50px;
+        background-position: 50vw -5vh;
+        
+        .LounchingSoonWrap {
+            padding-bottom: 5vh;
+            height: 100%;
+        }
+    }
+    
+}
+
+
+// CSS for the Free NFT for early birds 
+.FreeNFTForEarlyBirdsSection {
+    @include DisplayFlexColumn;
+    width: 100vw;
+
+    background: rgb(192,31,212);
+background: linear-gradient(90deg, rgba(192,31,212,1) 0%, rgba(214,93,0,1) 35%, rgba(63,171,59,1) 100%);
+    .wrapFreeNFTForEarlyBirdsSection {
+        @include DisplayFlexColumn;
+        width: 80%;
+       
+        height: 30%;
+        padding-top: 1%;
+        h2 {
+            padding-right: 4%;
+            padding-left: 4%;
+            width: 70%;
+            font-size: 2.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p {
+            padding-right: 4%;
+            padding-left: 4%;
+            width: 100%;
+            font-size: 1.5rem;
+            font-family:Georgia, 'Times New Roman', Times, serif
+           
+        }
+      
+    }
+}
+
+//  media quaries for Free NFT For EARLY birds
+
+@media screen and (min-width: 768px) {
+    .FreeNFTForEarlyBirdsSection {
+        width: 80vw;
+        align-self: center;
+        border-radius: 15px;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        height: 25%;
+    }
+}
+
+// CSS for logos of NFT
+.LOGOS {
+    @include DisplayFlexRow;
+    width: 80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    justify-content:center;
+    align-items: center;
+
+    .WrapLogos {
+        @include DisplayFlexRow;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        gap: 20px;
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        div {
+            max-width: 90px;
+            img {
+                max-width: 90px;
+            }
+        }
+       
+    }
+}
+
+// CSS LeSuperRrareActionSection
+
+
+.LeSuperRrareActionSection {
+    @include DisplayFlexRow;
+    justify-content: center;
+    margin: 0 auto;
+    height: 80vh;
+    width: 80vw;
+   
+    -webkit-overflow-scrolling: touch;
+    .wrapLeSuperRrareActionSection {
+        @include DisplayFlexColumn;
+     
+        width: 100%;
+        height: 80%;
+        margin: 0 auto;
+        .LeSuperRareAuctionHeader {
+            font-size: 2rem;
+        }
+        .LeSuperRareAuctionParagrapgh {
+            font-size: 1.5rem;
+            color: #555555; 
+            p a {
+                color: #555555; 
+            }
+        }
+        .LeSuperRrateAuctionGallery {
+            @include DisplayFlexColumn;
+            font-size: 1.5rem;
+            width: 80vw;
+            height: 100%;
+          
+            .wrapLeSuperRareAuctionGallery {
+                @include DisplayFlexRow;
+                
+                overflow-x: auto;
+                gap: 4vw;
+                scroll-behavior: smooth;
+                width: 80vw;
+            height: 70vh;
+            .LeSuperRareAuctionItem1 {
+                height: 100%;
+                background-color: lightgray;
+                border-radius: 15px;
+                .LeSuperRrateAuctionParagpraghGalleryImage {
+                   img {
+                    scale: 1/2;
+                    height: 30vh;
+                   }
+                }
+                .LeSuperRareAuctionItem1Footer {
+                    @include DisplayFlexRow;
+                    justify-content: space-around;
+                    height: 40%;
+                    min-height: 40%;
+                    .LeSuperRareAuctionItem1FooterRight {
+                        display: flex;
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                    }
+                    .LeSuperRareAuctionItem1FooterLeft {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                    }
+                                                .LeSuperRareAuctionItem1FooterLeft h4 {
+                            color: orangered;
+                            max-height: 10%;
+                    }
+                    .LeSuperRareAuctionItem1FooterLeft p:first-of-type {
+                        font-weight: bold;
+                        max-height: 10%;
+                    }
+                    .LeSuperRareAuctionItem1FooterLeft p:last-of-type  {
+                            color:gray;
+                            max-height: 10%;
+                    }
+                    .LeSuperRareAuctionItem1FooterRight h4  {
+                            color: gray;
+                            font-weight: normal;
+                            max-height: 10%;
+                    }
+                    .LeSuperRareAuctionItem1FooterRight p:first-of-type {
+                        font-weight: bold;
+                        max-height: 10%;
+                    }
+                    .LeSuperRareAuctionItem1FooterRight p:last-of-type {
+                        color: gray;
+                        max-height: 10%;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+
+// Media quaries for Le super rate auction gallery
+
+  @media screen and (min-width: 768px) {
+    .LeSuperRrareActionSection {
+        height: 85vh;  
+    } 
+     .wrapLeSuperRareAuctionGallery {
+       height: 100%;
+       display: flex;
+       justify-content: space-between;
+       overflow-y: hidden;      
+    }
+   #ImageInTheGallery  {
+        height: 10%;
+        width: 100%;
+    }
+   #wrapLeSuperRareAuctionGallery {
+    height: 100%;
+   }
+ 
+ }
+
+//  CSS for the green chick section
+
+.greenChickSection {
+    @include DisplayFlexColumn;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5%;
+  
+    width: 100vw;
+    background:  url("upsell-footer-image.svg") center/cover no-repeat;
+    background-size: 100px;
+    background-position: 80% 11vh;
+ 
+    .wrapgreenChickSection {
+        @include DisplayFlexColumn;
+        justify-content: center;
+        width: 80vw;
+        height: 100%;
+  
+        .greenChickSectionH4 {
+            color: $differentColorA;
+            font-size: 3rem;
+          
+           display: flex;
+           align-items: center;
+          
+          
+        }
+        .greenChickSectionH2 {
+            font-size: 3rem;
+            width: 62%;
+           
+           
+           
+            h2 {
+                margin: 2px;
+            }
+        }
+        .greenChickSectionP {
+            width: 62%;
+            color: $PtextColor;
+            font-size: 1.8rem;
+           
+            display: flex;
+           align-items: center;
+          
+        }
+        .greenChickSectionButton button {
+            background-color: transparent;
+                font-size: 1.5rem;
+                padding: 10px;
+                border-radius: 30px; 
+                border-width: 4px;
+                border-image: linear-gradient(45deg,red,blue) 10;
+               
+                
+        }
+    }
+    
+}
+// Media Qauries for greenchick
+@media screen and (min-width: 768px) {
+.greenChickSection {
+    
+    
+   @include DisplayFlexColumn;
+    
+    .wrapgreenChickSection {
+        height: 100%;
+        
+        @include DisplayFlexColumn;
+        justify-content: center;
+    }
+}
+
+}
+.greenChickSectionButton {
+    max-height: 25%
+}
+
+//  CSS for for the footer 
+
+.FooterSection {
+    @include DisplayFlexColumn;
+    width: 100%;
+   
+    align-items: center;
+
+        margin-top: 5vh;
+   
+    .wrapFooter {
+        @include DisplayFlexColumn;
+        width: 80%;
+        .wrapFooterHeaderAndNavigation {
+            display: flex;
+            flex-direction: column
+        }
+        .FooterHeader {
+            @include DisplayFlexColumn;
+            width: 100%;
+            .footerheaderLogoWrap {
+                @include DisplayFlexRow;
+                align-items: center;
+                gap: 5px;
+                height: 45px;
+                .FooterHeaderLogo {
+                    scale: 1/1;
+                    height: auto;
+                }
+                .FooterHeaderCompanyName h2 {
+                    font-size: 4rem;
+                }
+            }
+            .footerHeaderH3 {
+                color: $PtextColor;
+                font-size: 1.5rem;
+            }
+            #footerSocialIcons {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+            #footerSocialIcons span {
+             
+             
+              a {
+                color: gray;
+                text-decoration: none;
+               
+              }
+              
+            }
+        }
+        .footerNavigation {
+            @include DisplayFlexColumn;
+            width: 100%;
+            margin-top: 3vh;
+            font-size: 1.6rem;
+            .WraptopNavigationBlock, .WrapBottompNavigationBlock {
+                @include DisplayFlexRow;
+                gap: 30vw;
+                width: 100%;
+                .navigationBlock {
+                    @include DisplayFlexColumn;
+                    gap: 10px;
+                    a {
+                        text-decoration: none;
+                        color: $PtextColor;
+                    }
+                }
+            }
+          
+        }
+        .WrapFooterCopyrighted {
+            @include DisplayFlexRow;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            font-size: 1.5rem;
+            .LaunchingAugust {
+              display: none;
+            }
+            p {
+                color: $PtextColor;
+            }
+        }
+    }
+}
+// Media Quries for Footer
+@media screen and (min-width: 768px)  {
+    .FooterSection {
+        margin-top: 5vh;
+    }
+    #wrapFooterHeaderAndNavigation {
+        display: flex;
+        flex-direction: row;
+    }
+    #footerNavigation {
+        @include DisplayFlexRow;
+        gap: 5vw;
+     
+      
+        .WraptopNavigationBlock {
+            gap: 5vw;
+            @include DisplayFlexRow;
+            justify-content: flex-end;
+            flex:3;
+        }
+        .WrapBottompNavigationBlock {
+            gap: 5vw;
+            @include DisplayFlexRow;
+            justify-content: flex-start;
+            flex:1;
+        }
+    }
+
+.WrapFooterCopyrighted {
+    @include DisplayFlexRow;
+    justify-content: space-between
+}
+    #LaunchingAugust {
+    @include DisplayFlexRow;
+
+}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
